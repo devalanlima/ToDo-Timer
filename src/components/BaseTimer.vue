@@ -75,8 +75,8 @@ import BaseInput from "../components/BaseInput.vue";
 import BaseButton from "../components/BaseButton.vue";
 
 interface Props { 
-  isExpired: boolean | undefined,
-  isRunning: boolean | undefined,
+  isExpired?: boolean | undefined,
+  isRunning?: boolean | undefined,
 }
 
 const days = ref(0);
