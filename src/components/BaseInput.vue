@@ -1,5 +1,5 @@
 <template>
-  <input class="outline-none focus:bg-gray-300 grow shadow-solid border-2 border-black py-2 px-4 m-1" v-model="inputValue">
+  <input class="outline-none focus:bg-gray-300 grow shadow-solid border-2 bg-white dark:bg-black dark:border-white border-black text-black dark:text-white dark:shadow-solidWhite dark:focus:bg-gray-800 py-2 px-4 m-1" v-model="inputValue">
 </template>
 
 <script setup lang="ts">
