@@ -4,7 +4,7 @@
     <ul class="gap-5 grid grid-cols-[repeat(auto-fill,_minmax(500px,_1fr))] justify-items-center m-5">
       <template v-for="item in allLists" :key="item.id">
         <li :id="item.id" class="grow w-full">
-          <ListContainer @@delItem="delItem(item.id)" />
+          <ListContainer @@deleteItem="deleleteItem(item.id)" />
         </li>
       </template>
     </ul>
@@ -27,7 +27,7 @@ const allLists = ref([{
   id: v4(),
 }]);
 
-const delItem = (id: string) => {
+const deleleteItem = (id: string) => {
   allLists.value = allLists.value.filter(item => item.id !== id);
 }
 

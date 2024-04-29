@@ -1,7 +1,7 @@
 <template>
   <section class="border-2 border-black px-2 py-4 shadow-solid bg-white dark:bg-black dark:shadow-solidWhite dark:border-white flex flex-col gap-5">
     <div class="w-full flex">
-      <BaseButton icon="fa-solid fa-close" class="max-w-[50px]" @@click="$emit('@delItem')" />
+      <BaseButton icon="fa-solid fa-close" class="max-w-[50px]" @@click="$emit('@deleteItem')" />
       <BorderlessInput placeholder="Edit Title..." class="m-2 mr-14" type="text" v-model="inputTitle"/>
     </div>
     <div class="w-full flex">
@@ -33,7 +33,7 @@ interface Item {
   id: string;
 };
 
-const emit = defineEmits(['@delItem']);
+const emit = defineEmits(['@deleteItem']);
 
 const addItem = () => {
   myArray.value.push({
